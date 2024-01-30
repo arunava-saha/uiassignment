@@ -24,7 +24,7 @@ export const CoffeeMachine = () => {
   const calculateBill = () => {
     let totalAmount = 0;
     order.forEach((el) => {
-      switch (order.size) {
+      switch (el.size) {
         case "small":
           totalAmount += 1.5 * el.quan;
           break;
